@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Your Page Title</title>
+    <style>
+        body {
+    margin: 0;
+    background-color: #280364;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logo {
+    margin-right: 40%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navigation {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.header .nav-link.overview {
+    color: gray;
+}
+
+.header .nav-link.purchase {
+    background-color: red;
+    /* color: white; */
+    border-radius: 50px;
+    padding: 8px 16px;
+    /* display: inline-block; */
+}
+
+  
+
+.nav-link {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 30px);
+    margin-right: 100px;
+}
+
+.info-panel {
+    width: 40%;
+    text-align: left;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.page-title {
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: rgb(173, 172, 172);
+}
+
+.learn-more {
+    background: #E93A7D;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.login-form {
+    width: 40%;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.signup-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1E0E62;
+    margin-bottom:10%;
+}
+
+.content-box {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.question {
+    color: rgba(21, 20, 56, 0.40);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.question a{
+    color: #25DAC5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-login button {
+    width: 100%;
+    background: #1DA1F2;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background: #EBEAED;
+    margin: 0 10px;
+}
+
+.or {
+    color: rgba(21, 20, 56, 0.40);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.terms span {
+    color: rgba(21, 20, 56, 0.40);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 10px;
+}
+
+.input-box {
+    margin-bottom: 30px;
+    margin-right: 10%;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 2px #EBEAED solid;
+    border-radius: 100px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+label {
+    display: block;
+    text-align: left;
+    color: rgba(21, 20, 56, 0.40);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>Startup 3</h1>
+            </div>
+            <nav class="navigation">
+                <div class="nav-link overview">Overview</div>
+                <div class="nav-link prices">Prices</div>
+                <div class="nav-link blog">Blog</div>
+                <div class="nav-link feedback">Feedback</div>
+                <div class="nav-link purchase">Purchase</div>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="info-panel">
+                <h2 class="page-title">Generate Awesome Web Pages</h2>
+                <div class="info-text">
+                    <p>The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks.</p>
+                </div>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="login-form">
+                <div class="content-box">
+                    <h1 class="signup-title">Sign Up Now</h1>
+                    <div class="input-box">
+                        <input type="email" placeholder="Your email" id="email">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Your password" id="password">
+                    </div>
+                    <div class="terms">
+                        <div class="checkmark" ><input type="checkbox"></div>
+                        <span>I agree to the Terms of Service.</span>
+                    </div>                   
+                    <div class="social-login">
+                        <button class="twitter-login" style="background-color: #482BE7;">Sign In</button>
+                        <div class="separator">
+                            <div class="line"></div>
+                            <div class="or">or</div>
+                            <div class="line"></div>
+                        </div>
+                        <button class="twitter-login">Login via Twitter</button>
+                    </div>
+                    <div class="question">
+                        <p>Do you have an Account? <a href="#">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
